@@ -14,7 +14,7 @@ if __name__ == '__main__':
     result = BeautifulReport(test_suite)
     result.report(filename=now_time, description='测试deafult报告',theme='theme_default', report_dir=report_file)
     #邮件名称正文内容关键字1
-    email.sendemali('purchase')1
+    email.sendemali('purchase')
 
 
 
