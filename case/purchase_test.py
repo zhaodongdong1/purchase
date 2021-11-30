@@ -3,7 +3,6 @@ from util.read_excel import ReadExcelData
 from handle.actionmethod import ActionMethod
 import os
 from log.user_log import User_Log
-from BeautifulReport import BeautifulReport
 import unittest
 from selenium import webdriver
 

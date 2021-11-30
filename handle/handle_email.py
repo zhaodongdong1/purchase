@@ -54,4 +54,4 @@ class Send_Email(object):
 
 if __name__ == '__main__':
     Send_Email().sendemali('集采')
-#sendemali('/Users/zhaodongdong/PycharmProjects/purchase/report/2021-11-27.html')
+    #sendemali('/Users/zhaodongdong/PycharmProjects/purchase/report/2021-11-27.html')
