@@ -5,10 +5,9 @@ import os
 from log.user_log import User_Log
 import unittest
 from selenium import webdriver
-
 log = User_Log().get_log()
 close_log = User_Log().close_handler()
-class Keyword_Purchasecase(unittest.TestCase):
+class Test_Keyword_Purchasecase(unittest.TestCase):
     #def setUp(self):
         #self.driver = webdriver.Chrome()
         #self.action_method = ActionMethod()
@@ -102,5 +101,5 @@ class Keyword_Purchasecase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    run_test = Keyword_Purchasecase()
+    run_test = Test_Keyword_Purchasecase()
     run_test.test_run_main()

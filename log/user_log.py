@@ -21,7 +21,7 @@ class User_Log():
         #filename = os.path.abs
         #设置日志格式，asctime时间，filename文件名称，levelname日志等级，module日志模块，funcName调用方法名称，message日志内容
         formatter = logging.Formatter('%(asctime)s %(filename)s %(levelname)s %(module)s %(funcName)s----> %(message)s')
-        #设置好的日志格式添加到控制台渠道
+        #格式化文件渠道日志格式
         self.file_handle.setFormatter(formatter)
         #新增handler时判断是否已经存在handler
         if not self.loger.handlers:

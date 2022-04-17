@@ -1,4 +1,8 @@
-a = 0
-for i in range(1,99,2):
-    a+=i
+def test1():
+    a = 100
+
+def test2():
+    print(a)
+
+test1()
 print(a)

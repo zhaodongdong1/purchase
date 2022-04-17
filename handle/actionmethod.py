@@ -50,6 +50,7 @@ class ActionMethod:
         #print(value)
     #点击元素
     def click_element(self,key,node):
+        #隐式等待
         self.driver.implicitly_wait(5)
         self.FindElement(key,node).click()
 
@@ -66,6 +67,7 @@ class ActionMethod:
 
         loc = (By.XPATH,value)
         #self.driver.switch_to_frame(loc)
+        #显式等待
         WebDriverWait(self.driver, 10).until(expected_conditions.presence_of_element_located(loc))
         #time.sleep(5)
         #print(value)
