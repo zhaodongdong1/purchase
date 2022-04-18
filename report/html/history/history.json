@@ -1,0 +1,22 @@
+{
+  "599ee7e3db83313e6ad0a8ee47a1c276" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d789101173e7ee1",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'send_keys'",
+      "time" : {
+        "start" : 1650210008703,
+        "stop" : 1650210019407,
+        "duration" : 10704
+      }
+    } ]
+  }
+}

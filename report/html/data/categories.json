@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'send_keys'",
+      "children" : [ {
+        "name" : "test_run_main",
+        "uid" : "d789101173e7ee1",
+        "parentUid" : "a05f48b24b52cc0787012b67ef4b7cc9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650210008703,
+          "stop" : 1650210019407,
+          "duration" : 10704
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a05f48b24b52cc0787012b67ef4b7cc9"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

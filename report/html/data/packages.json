@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "case.purchase_test",
+    "children" : [ {
+      "name" : "test_run_main",
+      "uid" : "d789101173e7ee1",
+      "parentUid" : "e76bd630b6cc21ce93f6d512520cf0e5",
+      "status" : "broken",
+      "time" : {
+        "start" : 1650210008703,
+        "stop" : 1650210019407,
+        "duration" : 10704
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "case.purchase_test"
+  } ],
+  "name" : "packages"
+}

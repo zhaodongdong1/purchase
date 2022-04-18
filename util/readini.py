@@ -25,7 +25,10 @@ class Read_INI():
     def read_inidata(self,key):
         cf = configparser.ConfigParser()
         cf.read(self.filename)
-        data = cf.get(self.node,key)
+        try:
+            data = cf.get(self.node,key)
+        except:
+            return None
         return data
 '''
     def get_value(self,key):

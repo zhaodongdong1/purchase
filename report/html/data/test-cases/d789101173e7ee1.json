@@ -1,0 +1,135 @@
+{
+  "uid" : "d789101173e7ee1",
+  "name" : "test_run_main",
+  "fullName" : "case.purchase_test.Test_Keyword_Purchasecase#test_run_main",
+  "historyId" : "599ee7e3db83313e6ad0a8ee47a1c276",
+  "time" : {
+    "start" : 1650210008703,
+    "stop" : 1650210019407,
+    "duration" : 10704
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'send_keys'",
+  "statusTrace" : "self = <case.purchase_test.Test_Keyword_Purchasecase object at 0x7f85462ac310>\n\n    def test_run_main(self):\n        self.action_method = ActionMethod()\n        caseaddres = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + '/config/' + 'keywords.xls')\n        handle_excel = ReadExcelData(caseaddres)\n        #handle_excel = ReadExcelData('/Users/zhaodongdong/PycharmProjects/purchase/config/keywords.xls')\n        case_lines = handle_excel.get_lines()\n        if case_lines is not None:\n            for i in range(1,case_lines):\n                module_name = handle_excel.get_col_value(i,1)\n                is_run = handle_excel.get_col_value(i,2)\n                handle = handle_excel.get_col_value(i,3)\n                log.info('配置文件获取：%s->%s-->%s'%(is_run,module_name,handle))\n                User_Log().close_handler()\n                if is_run == 'yes':\n                    method = handle_excel.get_col_value(i,4)\n                    nodeelement = handle_excel.get_col_value(i,5)\n                    handle_element = handle_excel.get_col_value(i,6)\n                    send_data = handle_excel.get_col_value(i,7)\n                    #print(send_data)\n                    except_result_method = handle_excel.get_col_value(i,8)\n                    except_result_value = handle_excel.get_col_value(i,9)\n>                   self.run_method(method, handle_element, send_data, nodeelement)\n\ncase/purchase_test.py:52: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncase/purchase_test.py:87: in run_method\n    result = method_value(handle_element,int(send_data),node_element)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <handle.actionmethod.ActionMethod object at 0x7f85463008b0>, key = 'password11', value = 12345678, node = 'recodeElement'\n\n    @allure.step(title='输入数据')\n    def send_value(self,key,value,node):\n    \n        find_element = self.FindElement(key,node)\n        #time.sleep(10)\n>       find_element.send_keys(value)\nE       AttributeError: 'NoneType' object has no attribute 'send_keys'\n\nhandle/actionmethod.py:51: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'send_keys'",
+    "statusTrace" : "self = <case.purchase_test.Test_Keyword_Purchasecase object at 0x7f85462ac310>\n\n    def test_run_main(self):\n        self.action_method = ActionMethod()\n        caseaddres = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + '/config/' + 'keywords.xls')\n        handle_excel = ReadExcelData(caseaddres)\n        #handle_excel = ReadExcelData('/Users/zhaodongdong/PycharmProjects/purchase/config/keywords.xls')\n        case_lines = handle_excel.get_lines()\n        if case_lines is not None:\n            for i in range(1,case_lines):\n                module_name = handle_excel.get_col_value(i,1)\n                is_run = handle_excel.get_col_value(i,2)\n                handle = handle_excel.get_col_value(i,3)\n                log.info('配置文件获取：%s->%s-->%s'%(is_run,module_name,handle))\n                User_Log().close_handler()\n                if is_run == 'yes':\n                    method = handle_excel.get_col_value(i,4)\n                    nodeelement = handle_excel.get_col_value(i,5)\n                    handle_element = handle_excel.get_col_value(i,6)\n                    send_data = handle_excel.get_col_value(i,7)\n                    #print(send_data)\n                    except_result_method = handle_excel.get_col_value(i,8)\n                    except_result_value = handle_excel.get_col_value(i,9)\n>                   self.run_method(method, handle_element, send_data, nodeelement)\n\ncase/purchase_test.py:52: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncase/purchase_test.py:87: in run_method\n    result = method_value(handle_element,int(send_data),node_element)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <handle.actionmethod.ActionMethod object at 0x7f85463008b0>, key = 'password11', value = 12345678, node = 'recodeElement'\n\n    @allure.step(title='输入数据')\n    def send_value(self,key,value,node):\n    \n        find_element = self.FindElement(key,node)\n        #time.sleep(10)\n>       find_element.send_keys(value)\nE       AttributeError: 'NoneType' object has no attribute 'send_keys'\n\nhandle/actionmethod.py:51: AttributeError",
+    "steps" : [ {
+      "name" : "输入数据",
+      "time" : {
+        "start" : 1650210016097,
+        "stop" : 1650210016218,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "key",
+        "value" : "'username'"
+      }, {
+        "name" : "value",
+        "value" : "'zhaodongdong'"
+      }, {
+        "name" : "node",
+        "value" : "'recodeElement'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "输入数据",
+      "time" : {
+        "start" : 1650210016253,
+        "stop" : 1650210019405,
+        "duration" : 3152
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'send_keys'\n",
+      "statusTrace" : "  File \"/Users/zhaodongdong/PycharmProjects/purchase/venv/lib/python3.9/site-packages/allure_commons/_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"/Users/zhaodongdong/PycharmProjects/purchase/handle/actionmethod.py\", line 51, in send_value\n    find_element.send_keys(value)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "54fccf9b0cd922fb",
+        "name" : "失败截图,定位方式是password11",
+        "source" : "54fccf9b0cd922fb.png",
+        "type" : "image/png",
+        "size" : 2749050
+      } ],
+      "parameters" : [ {
+        "name" : "key",
+        "value" : "'password11'"
+      }, {
+        "name" : "value",
+        "value" : "12345678"
+      }, {
+        "name" : "node",
+        "value" : "'recodeElement'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "2c6271219f2c0d4e",
+      "name" : "log",
+      "source" : "2c6271219f2c0d4e.txt",
+      "type" : "text/plain",
+      "size" : 832
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "purchase_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Keyword_Purchasecase"
+  }, {
+    "name" : "host",
+    "value" : "zhaodongdongdeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "33834-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.purchase_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d789101173e7ee1.json",
+  "parameterValues" : [ ]
+}

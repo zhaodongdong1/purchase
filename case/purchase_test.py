@@ -1,4 +1,6 @@
 #coding=utf-8
+import allure
+
 from util.read_excel import ReadExcelData
 from handle.actionmethod import ActionMethod
 import os
@@ -7,7 +9,7 @@ import unittest
 from selenium import webdriver
 log = User_Log().get_log()
 close_log = User_Log().close_handler()
-class Test_Keyword_Purchasecase(unittest.TestCase):
+class Test_Keyword_Purchasecase():
     #def setUp(self):
         #self.driver = webdriver.Chrome()
         #self.action_method = ActionMethod()
@@ -25,6 +27,7 @@ class Test_Keyword_Purchasecase(unittest.TestCase):
         self.driver.save_screenshot(filename+'/%s.png'%test_method)
 
     #@BeautifulReport.add_test_img('点击资产模块')
+    #@allure.step(title='测试用例')
     def test_run_main(self):
         self.action_method = ActionMethod()
         caseaddres = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + '/config/' + 'keywords.xls')

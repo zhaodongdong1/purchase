@@ -1,0 +1,9 @@
+[32mINFO    [0m root:purchase_test.py:42 配置文件获取：yes->登录-->打开浏览器
+[32mINFO    [0m root:purchase_test.py:42 配置文件获取：yes->登录-->输入url
+[32mINFO    [0m root:purchase_test.py:42 配置文件获取：yes->登录-->点击
+[32mINFO    [0m root:find_element.py:17 调用ini文件的key为change,data是xpath>//*[@id="app"]/div[1]/div/div/div[2]/span[2]
+[32mINFO    [0m root:purchase_test.py:42 配置文件获取：yes->登录-->输入
+[32mINFO    [0m root:find_element.py:17 调用ini文件的key为username,data是xpath>//*[@id="userNames"]
+[32mINFO    [0m root:actionmethod.py:52 元素输入zhaodongdong
+[32mINFO    [0m root:purchase_test.py:42 配置文件获取：yes->登录-->输入
+[32mINFO    [0m root:find_element.py:17 调用ini文件的key为password11,data是None

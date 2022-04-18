@@ -1,4 +1,5 @@
 #from pykeyboard import PyKeyboard
+import allure
 from selenium.webdriver.support import expected_conditions
 import os
 #import pyperclip
@@ -40,8 +41,11 @@ class ActionMethod:
             return element
         except:
             return None
+
     #输入元素
+    @allure.step(title='输入数据')
     def send_value(self,key,value,node):
+
         find_element = self.FindElement(key,node)
         #time.sleep(10)
         find_element.send_keys(value)
