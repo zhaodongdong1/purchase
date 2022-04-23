@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a8a2074-6bc3-46d5-9a67-61cfcbf7012d" name="Changes" comment="disici">
+      <change afterPath="$PROJECT_DIR$/Image/2022-04-23 21:19:48password11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/report/09f57bdd-6be1-481a-a0ed-1c1c23226d15-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/report/6bf80075-f9ca-4269-b0b4-51a3ba90fb9b-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/report/78caadec-0d6f-49ed-b6e5-7ead8718d987-attachment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/report/b8f0370c-d72f-404b-a2e4-f4d1ebe1d96a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/logs/2022-04-23test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/find_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/find_element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/11111.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/11111.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/purchase_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/purchase_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/keywords.xls" beforeDir="false" afterPath="$PROJECT_DIR$/config/keywords.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handle/actionmethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/actionmethod.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/readini.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/readini.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +65,15 @@
     <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="20mFrxzYSLJWzsg06Q0JWCgBKV0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -252,6 +258,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="disici" />
     <option name="LAST_COMMIT_MESSAGE" value="disici" />
   </component>
