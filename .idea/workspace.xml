@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a8a2074-6bc3-46d5-9a67-61cfcbf7012d" name="Changes" comment="disici">
-      <change afterPath="$PROJECT_DIR$/Image/2022-04-23 21:19:48password11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/report/09f57bdd-6be1-481a-a0ed-1c1c23226d15-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/report/6bf80075-f9ca-4269-b0b4-51a3ba90fb9b-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/report/78caadec-0d6f-49ed-b6e5-7ead8718d987-attachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/report/b8f0370c-d72f-404b-a2e4-f4d1ebe1d96a-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/logs/2022-04-23test.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/keywords.xls" beforeDir="false" afterPath="$PROJECT_DIR$/config/keywords.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handle/actionmethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/handle/actionmethod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/report/2c1251e8-966b-41e5-bffd-934bab5af96d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/report/d9ba9907-6a09-4632-835d-76e038271bbf-attachment.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,0 +1,1 @@
+INFO     root:purchase_test.py:42 配置文件获取：yes->登录-->打开浏览器

@@ -19,7 +19,7 @@ class ActionMethod:
     #打开浏览器
     def open_browser(self,browser,*args):
         if browser == '谷歌':
-            self.driver = webdriver.Chrome()
+            self.driver = webdriver.Chrome('/usr/local/bin/chromedriver')
             #log.info('获取浏览器驱动类型%s'%browser)
             #User_Log().close_handler()
         elif browser == '火狐':
